@@ -1,0 +1,6 @@
+  select count(*)
+  into l_emp
+  from Employee e
+  inner join Work_Location w
+  on e.Employee_Id = w.Employee_Id
+  where w.Number_Of_Employees like l_NOFEmployees
